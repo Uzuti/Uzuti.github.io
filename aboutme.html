@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzuti | About Me</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <div class='spinner-wrapper'>
+        <div class="spinner"></div>
+    </div>
+    
+    <div class="main-content"></div>
+    
+    <script>
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+        window.addEventListener('load', function () {
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        });
+    </script>
+    <div id="text">
+        <h1 class="name">Botond <span>"Uzuti"</span> Támba</h1>
+        <p class="center">Hey there! I'm Botond. I'm an amateur student/front-end developer located in Hungary. <br>I'm currently a student at <a class="school" href="https://www.mfg.hu" alt="School Website">Dr.Mező Ferenc Gimnázium.</a></p>
+        <p class="int" class="center">I'm interested in:</p>
+        <ul class="li">
+            <li>Languages: I currently speak English and Hungarian fluently but I'm also studying Russian and Norwegian.</li>
+            <li>New technologies</li>
+            <li>Travelling and photography</li>
+        </ul>
+        <p class="skills">My skills:</p>
+        <ul class="li2">
+            <li class="code"> HTML, CSS/SCSS, C# and more or less JavaScript, Python</li>
+            <li class="apps"> Adobe: Photoshop, Illustrator, Premiere Pro, Lightroom</li>
+        </ul>
+        <p class="contact"><a href="contact.html" alt="Contact page">Let's make something special! <span>🙌</span> </a></p>
+    </div>
+    <div id="pos">
+        <a>ME</a>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html"><img src="images/home.svg" alt="Home button"></li>
+            <li><a href="aboutme.html"><img src="images/mev2.svg" alt="About Me button"></a></li>
+            <li><a href="work.html"><img src="images/eye.svg" alt="View my projects button"></a></li>
+            <li><a href="contact.html"><img src="images/email.svg" alt="Contact Me button"></a></li>
+        </ul>
+    </div>
+    <ul class="bgsb"></ul>
+    <ul class="bgsb2"><a>
+            <li><a href="index.html"><img src="images/logo.svg" alt="Home Logo with Logo"></a></li>
+    </ul>
+    
+</body>
+</html>

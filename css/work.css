@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@100&display=swap");
+:root {
+  --primary-color: rgb(187, 75, 0);
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+body {
+  background-image: url("../images/bg.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: #151415;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+#sidebar img {
+  width: 41%;
+  padding-bottom: 1.6em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  display: block;
+  padding-left: 1.1em;
+}
+
+#sidebar ul {
+  top: 41.3%;
+  margin: 0;
+  padding: 0;
+  width: 4em;
+  background-color: #171617;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 100;
+}
+
+.bgsb {
+  margin: 0;
+  padding: 0;
+  width: 4em;
+  background-color: #171617;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 98;
+  list-style-type: none;
+  -webkit-box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.39);
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.39);
+}
+
+.bgsb2 {
+  margin: 0;
+  padding: 0.5em 0 0.85em 0;
+  width: 4em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bb4b00), to(#e23213));
+  background-image: linear-gradient(#bb4b00, #e23213);
+  position: relative;
+  height: 7.5%;
+  overflow: auto;
+  z-index: 99;
+  list-style-type: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.24);
+}
+
+.bgsb2 .logo {
+  font-family: Poppins;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.9em;
+  padding-left: 0.88em;
+  font-weight: 400;
+}
+
+.bgsb2 li {
+  margin-top: 0.5em;
+  margin-left: 1.1em;
+}
+
+.bgsb2 img {
+  width: 1.7em;
+}
+
+#pos {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 51.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 9vh;
+  filter: blur(1rem);
+  -webkit-filter: blur(1rem);
+}
+
+#pos a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.027);
+  font-weight: 900;
+  font-size: 7em;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("photographer.jpg");
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgba(73, 42, 21, 0.199);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 0.4rem solid var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.spinner-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #141314;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spinner {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.spinner:before {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bb4b00), to(#151415));
+  background-image: linear-gradient(90deg, #bb4b00 0%, #151415 100%);
+  -webkit-animation: spin .5s infinite linear;
+          animation: spin .5s infinite linear;
+}
+
+.spinner:after {
+  width: 90%;
+  height: 90%;
+  background-color: #141314;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=work.css.map */
